@@ -8,3 +8,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 if [ -f ~/.bash_aliases_local ]; then
 	. ~/.bash_aliases_local
 fi
+
+# for nodenv
+eval "$(nodenv init -)"
+
