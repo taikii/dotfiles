@@ -4,11 +4,13 @@
 	st = status
 	ck = checkout
 	br = branch -vv -a
-	lg = log --graph --pretty=format:'%Cred%h%Creset %Cgreen%cd%Creset %s %C(bold blue)<%an>%Creset %C(yellow)%d%Creset' --abbrev-commit --date=iso
-	lgf = log --graph --name-status --pretty=format:'%Cred%h%Creset %Cgreen%cd%Creset %s %C(bold blue)<%an>%Creset %C(yellow)%d%Creset%n' --abbrev-commit --date=iso
+	lg = log --graph --pretty=tformat:'%Cred%h%Creset %Cgreen%cd%Creset %s %C(bold blue)<%an>%Creset %C(yellow)%d%Creset' --abbrev-commit --date=iso
+	lgf = log --graph --name-status --pretty=tformat:'%Cred%h%Creset %Cgreen%cd%Creset %s %C(bold blue)<%an>%Creset %C(yellow)%d%Creset%n' --abbrev-commit --date=iso
 [core]
 	autocrlf = false
 	quotepath = false
 	filemode = false
+[init]
+	defaultBranch = main
 [pull]
 	ff = only
