@@ -68,6 +68,10 @@ set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
+" .un~ファイルの出力を行い、出力ディレクトリを1箇所にまとめる
+set undofile
+set undodir=~/.vim/undo
+
 augroup fileTypeIndent
   autocmd!
   autocmd BufNewFile,BufRead *.sh,*.bash setlocal noexpandtab tabstop=8 softtabstop=8 shiftwidth=8
