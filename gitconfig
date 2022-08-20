@@ -1,5 +1,5 @@
 [include]
-	path = ~/.gitconfig.local
+	path = ~/.local.gitconfig
 [alias]
 	st = status
 	ck = checkout
@@ -10,6 +10,7 @@
 	autocrlf = false
 	quotepath = false
 	filemode = false
+	editor = vim
 [init]
 	defaultBranch = main
 [pull]
