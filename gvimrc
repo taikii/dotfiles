@@ -10,5 +10,5 @@ set background=dark
 set visualbell t_vb=
 
 if has('win32')
-  set guifont=HackGenNerd:h10:cSHIFTJIS:qDRAFT
+  set guifont=Cica:h12:cSHIFTJIS:qDRAFT
 endif
