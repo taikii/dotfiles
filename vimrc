@@ -37,9 +37,7 @@ syntax enable
 colorscheme desert
 
 " Tab系
-" 不可視文字を可視化(タブが「▸-」と表示される)
-"set list listchars=tab:\▸\-
-set list
+" 不可視文字を可視化
 set listchars=tab:»-,trail:-,nbsp:%,eol:↲
 " 文字色
 hi NonText    ctermbg=NONE ctermfg=239 guibg=NONE guifg=NONE
@@ -144,6 +142,8 @@ if dein#load_state(s:dein_dir)
   call dein#add('itchyny/lightline.vim')
   call dein#add('lambdalisue/gina.vim')
   call dein#add('lambdalisue/fern.vim')
+  call dein#add('prabirshrestha/vim-lsp')
+  call dein#add('mattn/vim-lsp-settings')
 
   " Required:
   call dein#end()
